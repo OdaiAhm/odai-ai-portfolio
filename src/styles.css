@@ -1,3 +1,207 @@
-/* You can add global styles to this file, and also import other style files */
+@import "tailwindcss";
 
-@import 'tailwindcss';
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:
+    radial-gradient(
+        circle at center,
+        rgba(107,16,45,.18) 0%,
+        rgba(10,10,20,0) 45%
+    ),
+    linear-gradient(
+        180deg,
+        #070811 0%,
+        #04050b 100%
+    );
+
+    color:white;
+
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+}
+
+/* ========================= */
+/* About */
+/* ========================= */
+
+.about-card{
+    background:rgba(255,255,255,.03);
+    border:1px solid rgba(122,22,56,.25);
+    border-radius:20px;
+    padding:32px;
+
+    transition:
+    transform .25s ease,
+    box-shadow .25s ease;
+}
+
+.about-card:hover{
+    transform:translateY(-4px);
+
+    box-shadow:
+    0 0 20px rgba(122,22,56,.25);
+}
+
+
+/* ========================= */
+/* Skills */
+/* ========================= */
+
+.skill-card{
+    background:rgba(255,255,255,.03);
+    border:1px solid rgba(122,22,56,.25);
+    border-radius:16px;
+    padding:24px;
+    text-align:center;
+
+    transition:
+    transform .25s ease,
+    box-shadow .25s ease;
+}
+
+.skill-card:hover{
+    transform:translateY(-4px);
+
+    box-shadow:
+    0 0 20px rgba(122,22,56,.25);
+}
+
+.skill-card h3{
+    color:#a61e4d;
+    font-size:20px;
+    font-weight:bold;
+    margin-bottom:16px;
+}
+
+.skill-card p{
+    color:#b8b8c5;
+}
+
+
+/* ========================= */
+/* Projects */
+/* ========================= */
+
+.project-card{
+    background:rgba(255,255,255,.03);
+    border:1px solid rgba(122,22,56,.25);
+    border-radius:20px;
+    padding:32px;
+
+    transition:
+    transform .25s ease,
+    box-shadow .25s ease;
+}
+
+.project-card:hover{
+    transform:translateY(-6px);
+
+    box-shadow:
+    0 0 20px rgba(122,22,56,.25);
+}
+
+.project-card h3{
+    color:#a61e4d;
+    font-size:24px;
+    font-weight:bold;
+}
+
+.project-card h4{
+    color:#f1f1f1;
+    margin:12px 0;
+}
+
+.project-card p{
+    color:#b8b8c5;
+}
+
+
+/* ========================= */
+/* Tags */
+/* ========================= */
+
+.tags{
+    display:flex;
+    gap:8px;
+    flex-wrap:wrap;
+    margin-top:20px;
+}
+
+.tags span{
+    background:rgba(122,22,56,.15);
+    color:#a61e4d;
+    padding:4px 12px;
+    border-radius:999px;
+    font-size:14px;
+}
+
+
+/* ========================= */
+/* Certificates */
+/* ========================= */
+
+.certificate-card{
+    background:rgba(255,255,255,.03);
+    border:1px solid rgba(122,22,56,.25);
+    border-radius:20px;
+    padding:30px;
+    text-align:center;
+
+    transition:
+    transform .25s ease,
+    box-shadow .25s ease;
+}
+
+.certificate-card:hover{
+    transform:translateY(-4px);
+
+    box-shadow:
+    0 0 20px rgba(122,22,56,.25);
+}
+
+.certificate-card h3{
+    color:#a61e4d;
+    font-size:20px;
+    font-weight:bold;
+}
+
+.certificate-card p{
+    color:#f1f1f1;
+    margin:15px 0;
+}
+
+.certificate-card span{
+    color:#b8b8c5;
+}
+
+
+/* ========================= */
+/* Contact Buttons */
+/* ========================= */
+
+.contact-btn{
+    background:#7a1638;
+    color:white;
+    padding:12px 35px;
+    border-radius:999px;
+    font-weight:bold;
+
+    border:1px solid #a61e4d;
+
+    transition:
+    transform .25s ease,
+    background .25s ease,
+    box-shadow .25s ease;
+}
+
+.contact-btn:hover{
+    background:#8b1e3f;
+
+    box-shadow:
+    0 0 12px rgba(122,22,56,.35);
+
+    transform:scale(1.04);
+}
